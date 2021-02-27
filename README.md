@@ -11,7 +11,7 @@ Project: https://playcanvas.com/project/744419/overview/ammo-debug-draw
 
 Create new renderer and enabling it:
 ```js
-const renderer = new AmmoDebugDrawer();
+const renderer = new AmmoDebugDrawer(layer); // pc.Layer is optional, where you want to draw the debug state
 renderer.enable();
 ```
 
