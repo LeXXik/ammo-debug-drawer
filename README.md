@@ -11,7 +11,7 @@ Project: https://playcanvas.com/project/744419/overview/ammo-debug-draw
 
 Create new renderer and enabling it:
 ```js
-const renderer = new AmmoDebugDrawer(layer); // pc.Layer is optional, where you want to draw the debug state
+const renderer = new AmmoDebugDrawer();
 renderer.enable();
 ```
 
@@ -30,6 +30,12 @@ renderer.setMode(mode);
 Update the drawer state (should be in your `update` method to run every frame):
 ```js
 renderer.update();
+```
+
+Optionally, you can target specific layer for drawing. Internally defaults to layer `Debug Draw` and falls back to `UI`, if not found.
+```js
+const layer = app.scene.layers.getLayerByName('My Layer');
+const renderer = new AmmoDebugDrawer(layer);
 ```
 
 Disable drawer:
