@@ -1,5 +1,6 @@
 # ammo-debug-drawer
 A helper class to debug draw Ammo physics world state in PlayCanvas.
+
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](LICENSE)
 
 Live Demo: https://playcanv.as/p/OEVC2poo/
