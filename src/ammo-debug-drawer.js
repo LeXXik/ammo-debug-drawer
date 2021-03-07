@@ -66,7 +66,8 @@ class AmmoDebugDrawer {
         to.copy(from).add(dir);
         
         this.app.renderLine(from, to, this.color, {
-            layer: this.layer
+            layer: this.layer,
+            depthTest: false
         });
     }
     
@@ -97,7 +98,8 @@ class AmmoDebugDrawer {
         this._v2.set(t.x(), t.y(), t.z());
         
         this.app.renderLine(this._v1, this._v2, this.color, {
-            layer: this.layer
+            layer: this.layer,
+            depthTest: false
         });
     }
     
